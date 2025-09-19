@@ -1,0 +1,24 @@
+/* web/app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 255 255 255;
+  --fg: 17 24 39;
+  --muted: 107 114 128;
+  --card: 249 250 251;
+}
+
+.dark {
+  --bg: 17 24 39;
+  --fg: 229 231 235;
+  --muted: 156 163 175;
+  --card: 31 41 55;
+}
+
+html, body { height: 100%; }
+body { background-color: rgb(var(--bg)); color: rgb(var(--fg)); }
+
+.container { @apply max-w-2xl mx-auto px-4; }
+.card { background-color: rgb(var(--card)); @apply rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 p-4; }
