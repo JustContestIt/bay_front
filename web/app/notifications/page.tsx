@@ -3,10 +3,8 @@
 import { useEffect, useState } from 'react';
 import useSWR from 'swr';
 import { fetcherJSON, api } from '@/lib/api';
-// Update the import path if the file exists elsewhere, for example:
-import NotificationsList from '../../components/NotificationsList';
-// Or provide the correct relative path based on your project structure
 import useSocket from '../../hooks/useSocket';
+import NotificationsList from '../../components/NotificationsList';
 
 type Notification = {
   id: number;
@@ -44,7 +42,7 @@ export default function NotificationsPage() {
 
   return (
     <div className="space-y-4">
-      <div className="text-sm text-gray-500">
+      <div className="text-sm text-gray-500 space-y-2">
         Подписка на realtime-уведомления активна при наличии cookie.
       </div>
       <NotificationsList items={data || []} />

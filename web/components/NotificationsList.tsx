@@ -1,3 +1,5 @@
+'use client';
+
 type Notification = {
   id: number;
   type: 'LIKE' | 'COMMENT';

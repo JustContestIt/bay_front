@@ -39,7 +39,7 @@ export default function CreatePost({ onCreated }: { onCreated?: () => void }) {
           >
             Опубликовать
           </button>
-          <button
+          {/* <button
             type="button"
             className="rounded-xl px-4 py-2 text-sm border border-gray-300 dark:border-gray-600"
             onClick={async () => {
@@ -56,7 +56,7 @@ export default function CreatePost({ onCreated }: { onCreated?: () => void }) {
             title="Идея поста с сервера (OpenAI)"
           >
             Сгенерировать идею
-          </button>
+          </button> */}
         </div>
       </form>
     </div>

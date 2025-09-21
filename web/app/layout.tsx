@@ -1,10 +1,10 @@
-import './globals.css';
 import type { Metadata } from 'next';
 import NavBar from '../components/Navbar';
+import './global.css'
 
 export const metadata: Metadata = {
   title: 'Bailanysta',
-  description: 'Минимальная социальная сеть (Next.js + Express + Prisma)',
+  description: 'Cоциальная сеть',
 };
 
 export default function RootLayout({
@@ -12,7 +12,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // Применение темы из localStorage на стороне клиента — см. ThemeToggle
   return (
     <html lang="ru" suppressHydrationWarning>
       <body className="min-h-screen">

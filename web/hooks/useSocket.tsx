@@ -12,7 +12,7 @@ export default function useSocket() {
   }, []);
 
   useEffect(() => {
-    // соединение с сервером (cookie отдаются браузером автоматически)
+    // соединение с сервером
     const s = io(baseURL, {
       transports: ['websocket'],
       withCredentials: true,
